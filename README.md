@@ -11,7 +11,7 @@ We collect this complementary version of CIFAR10 in order to verify two importan
 
 ## Dataset
 
-[clcifar10] (https://bit.ly/3VtiI3U)
+Dataset download link: [clcifar10](https://bit.ly/3VtiI3U) (160.3MB)
 
 We use `pickle` package to save and load the dataset objects. Use the function `pickle.load` to load the dataset dictionary object `data` in Python.
 
