@@ -18,7 +18,7 @@ data = pickle.load(open("clcifar10.pkl", "rb"))
 # keys of data: 'filenames', 'data', 'ord_labels', 'com_labels', 'worker_ids'
 ```
 
-`data` would be a dictionary object with five keys: `filenames`, `data`, `ord_labels`, `cl_labels`, and `worker_ids`.
+`data` would be a dictionary object with five keys: `filenames`, `data`, `ord_labels`, `com_labels`, and `worker_ids`.
 
 * `data`: A `numpy.ndarray` of size (3072, ) representing the image data with 3 channels, 32*32 resolution.
 

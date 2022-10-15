@@ -1,0 +1,362 @@
+<!-- <crowd-form><form method="" action=""> -->
+    <style>
+      .row {
+        display: flex;
+      }
+      .column {
+        float: left;
+      }
+      .left {
+        width: 75%;
+      }
+      .right {
+        width: 25%;
+      }
+      .title {
+        padding-top: 0px;
+        margin-top: 30px;
+        margin-right: 20px;
+      }
+      .wrapper {
+        height: 50px;
+        background-color: lightblue;
+        display: flex;
+        padding-left: 20px;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .selection {
+        flex: content;
+      }
+      label {
+        display: flex;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: larger;
+        color: black;
+        position: relative;
+        margin-bottom: 0.175em;
+        outline: .125em solid lightgray;
+        background-color: lightgray;
+        width: 250px;
+      }
+    </style>
+    <div class="row">
+      <div class="column left" style="border-right:1px solid black;">
+    
+        <div id="p1" height="30px">
+        </div>
+        <div>
+          <p class="title wrapper"> Problem 1</p>
+          <img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/cifar100-large/small_mammals/squirrel_s_000388.png" height="200px">
+          <p>
+            Choose any one "incorrect" label for this image:
+          </p>
+          <div class="selection">
+            <div>
+              <label style="position:absolute; top:50%;">
+              <input type="radio" name="small_mammals/squirrel_s_000388.png" value="aquatic_mammals" required="" width="250px">
+              <div font-size="10pt">aquatic_mammals</div><div><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/aquatic_mammals.jpg"></div>
+              </label>
+            </div>
+            <div>
+              <label style="position:absolute; top:50%;">
+              <input type="radio" name="small_mammals/squirrel_s_000388.png" value="aquatic_mammals" required="" width="250px">
+              <div font-size="10pt">aquatic_mammals</div><div><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/aquatic_mammals.jpg"></div>
+              </label>
+            </div>
+            <div>
+              <label style="position:absolute; top:50%;">
+              <input type="radio" name="small_mammals/squirrel_s_000388.png" value="aquatic_mammals" required="" width="250px">
+              <div font-size="10pt">aquatic_mammals</div><div><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/aquatic_mammals.jpg"></div>
+              </label>
+            </div>
+            <div>
+              <label style="position:absolute; top:50%;">
+              <input type="radio" name="small_mammals/squirrel_s_000388.png" value="aquatic_mammals" required="" width="250px">
+              <div font-size="10pt">aquatic_mammals</div><div><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/aquatic_mammals.jpg"></div>
+              </label>
+            </div>
+                <!-- <label>
+                <input type="radio" name="small_mammals/squirrel_s_000388.png" value="fruit, vegetables and mushrooms" width="250px">
+                <span font-size="10pt">fruit, vegetables and mushrooms</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/fruit, vegetables and mushrooms.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="small_mammals/squirrel_s_000388.png" value="flowers" width="250px">
+                <span font-size="10pt">flowers</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/flowers.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="small_mammals/squirrel_s_000388.png" value="fish" width="250px">
+                <span font-size="10pt">fish</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/fish.jpg">
+                </label><br> -->
+          </div>
+        </div>
+    
+        <div id="p2" height="30px">
+        </div>
+        <div>
+          <p class="title wrapper"> Problem 2</p>
+          <img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/cifar100-large/reptiles/nile_crocodile_s_001319.png" height="200px">
+          <p>
+            Choose any one "incorrect" label for this image:
+          </p>
+          <div class="selection">
+                <label>
+                <input type="radio" name="reptiles/nile_crocodile_s_001319.png" value="non-insect invertebrates" required="" width="250px">
+                <span font-size="10pt">non-insect invertebrates</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/non-insect invertebrates.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="reptiles/nile_crocodile_s_001319.png" value="aquatic_mammals" width="250px">
+                <span font-size="10pt">aquatic_mammals</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/aquatic_mammals.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="reptiles/nile_crocodile_s_001319.png" value="insects" width="250px">
+                <span font-size="10pt">insects</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/insects.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="reptiles/nile_crocodile_s_001319.png" value="fruit, vegetables and mushrooms" width="250px">
+                <span font-size="10pt">fruit, vegetables and mushrooms</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/fruit, vegetables and mushrooms.jpg">
+                </label><br>
+          </div>
+        </div>
+    
+        <div id="p3" height="30px">
+        </div>
+        <div>
+          <p class="title wrapper"> Problem 3</p>
+          <img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/cifar100-large/reptiles/snake_s_000056.png" height="200px">
+          <p>
+            Choose any one "incorrect" label for this image:
+          </p>
+          <div class="selection">
+                <label>
+                <input type="radio" name="reptiles/snake_s_000056.png" value="insects" required="" width="250px">
+                <span font-size="10pt">insects</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/insects.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="reptiles/snake_s_000056.png" value="people" width="250px">
+                <span font-size="10pt">people</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/people.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="reptiles/snake_s_000056.png" value="fish" width="250px">
+                <span font-size="10pt">fish</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/fish.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="reptiles/snake_s_000056.png" value="large omnivores and herbivores" width="250px">
+                <span font-size="10pt">large omnivores and herbivores</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/large omnivores and herbivores.jpg">
+                </label><br>
+          </div>
+        </div>
+    
+        <div id="p4" height="30px">
+        </div>
+        <div>
+          <p class="title wrapper"> Problem 4</p>
+          <img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/cifar100-large/flowers/rosebush_s_000012.png" height="200px">
+          <p>
+            Choose any one "incorrect" label for this image:
+          </p>
+          <div class="selection">
+                <label>
+                <input type="radio" name="flowers/rosebush_s_000012.png" value="people" required="" width="250px">
+                <span font-size="10pt">people</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/people.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="flowers/rosebush_s_000012.png" value="fish" width="250px">
+                <span font-size="10pt">fish</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/fish.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="flowers/rosebush_s_000012.png" value="household electrical devices" width="250px">
+                <span font-size="10pt">household electrical devices</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/household electrical devices.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="flowers/rosebush_s_000012.png" value="medium-sized mammals" width="250px">
+                <span font-size="10pt">medium-sized mammals</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/medium-sized mammals.jpg">
+                </label><br>
+          </div>
+        </div>
+    
+        <div id="p5" height="30px">
+        </div>
+        <div>
+          <p class="title wrapper"> Problem 5</p>
+          <img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/cifar100-large/people/baby_s_002487.png" height="200px">
+          <p>
+            Choose any one "incorrect" label for this image:
+          </p>
+          <div class="selection">
+                <label>
+                <input type="radio" name="people/baby_s_002487.png" value="large man-made outdoor things" required="" width="250px">
+                <span font-size="10pt">large man-made outdoor things</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/large man-made outdoor things.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="people/baby_s_002487.png" value="food_containers" width="250px">
+                <span font-size="10pt">food_containers</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/food_containers.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="people/baby_s_002487.png" value="aquatic_mammals" width="250px">
+                <span font-size="10pt">aquatic_mammals</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/aquatic_mammals.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="people/baby_s_002487.png" value="medium-sized mammals" width="250px">
+                <span font-size="10pt">medium-sized mammals</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/medium-sized mammals.jpg">
+                </label><br>
+          </div>
+        </div>
+    
+        <div id="p6" height="30px">
+        </div>
+        <div>
+          <p class="title wrapper"> Problem 6</p>
+          <img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/cifar100-large/transportation_vehicles/train_s_003062.png" height="200px">
+          <p>
+            Choose any one "incorrect" label for this image:
+          </p>
+          <div class="selection">
+                <label>
+                <input type="radio" name="transportation_vehicles/train_s_003062.png" value="aquatic_mammals" required="" width="250px">
+                <span font-size="10pt">aquatic_mammals</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/aquatic_mammals.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="transportation_vehicles/train_s_003062.png" value="household electrical devices" width="250px">
+                <span font-size="10pt">household electrical devices</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/household electrical devices.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="transportation_vehicles/train_s_003062.png" value="flowers" width="250px">
+                <span font-size="10pt">flowers</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/flowers.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="transportation_vehicles/train_s_003062.png" value="medium-sized mammals" width="250px">
+                <span font-size="10pt">medium-sized mammals</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/medium-sized mammals.jpg">
+                </label><br>
+          </div>
+        </div>
+    
+        <div id="p7" height="30px">
+        </div>
+        <div>
+          <p class="title wrapper"> Problem 7</p>
+          <img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/cifar100-large/fruit_vegetables_and_mushrooms/golden_delicious_s_000687.png" height="200px">
+          <p>
+            Choose any one "incorrect" label for this image:
+          </p>
+          <div class="selection">
+                <label>
+                <input type="radio" name="fruit_vegetables_and_mushrooms/golden_delicious_s_000687.png" value="medium-sized mammals" required="" width="250px">
+                <span font-size="10pt">medium-sized mammals</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/medium-sized mammals.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="fruit_vegetables_and_mushrooms/golden_delicious_s_000687.png" value="non-insect invertebrates" width="250px">
+                <span font-size="10pt">non-insect invertebrates</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/non-insect invertebrates.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="fruit_vegetables_and_mushrooms/golden_delicious_s_000687.png" value="transportation vehicles" width="250px">
+                <span font-size="10pt">transportation vehicles</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/transportation vehicles.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="fruit_vegetables_and_mushrooms/golden_delicious_s_000687.png" value="small mammals" width="250px">
+                <span font-size="10pt">small mammals</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/small mammals.jpg">
+                </label><br>
+          </div>
+        </div>
+    
+        <div id="p8" height="30px">
+        </div>
+        <div>
+          <p class="title wrapper"> Problem 8</p>
+          <img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/cifar100-large/flowers/tulip_s_001960.png" height="200px">
+          <p>
+            Choose any one "incorrect" label for this image:
+          </p>
+          <div class="selection">
+                <label>
+                <input type="radio" name="flowers/tulip_s_001960.png" value="large natural outdoor scenes" required="" width="250px">
+                <span font-size="10pt">large natural outdoor scenes</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/large natural outdoor scenes.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="flowers/tulip_s_001960.png" value="large omnivores and herbivores" width="250px">
+                <span font-size="10pt">large omnivores and herbivores</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/large omnivores and herbivores.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="flowers/tulip_s_001960.png" value="fruit, vegetables and mushrooms" width="250px">
+                <span font-size="10pt">fruit, vegetables and mushrooms</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/fruit, vegetables and mushrooms.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="flowers/tulip_s_001960.png" value="people" width="250px">
+                <span font-size="10pt">people</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/people.jpg">
+                </label><br>
+          </div>
+        </div>
+    
+        <div id="p9" height="30px">
+        </div>
+        <div>
+          <p class="title wrapper"> Problem 9</p>
+          <img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/cifar100-large/trees/salix_alba_s_000152.png" height="200px">
+          <p>
+            Choose any one "incorrect" label for this image:
+          </p>
+          <div class="selection">
+                <label>
+                <input type="radio" name="trees/salix_alba_s_000152.png" value="trees" required="" width="250px">
+                <span font-size="10pt">trees</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/trees.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="trees/salix_alba_s_000152.png" value="medium-sized mammals" width="250px">
+                <span font-size="10pt">medium-sized mammals</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/medium-sized mammals.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="trees/salix_alba_s_000152.png" value="fruit, vegetables and mushrooms" width="250px">
+                <span font-size="10pt">fruit, vegetables and mushrooms</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/fruit, vegetables and mushrooms.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="trees/salix_alba_s_000152.png" value="flowers" width="250px">
+                <span font-size="10pt">flowers</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/flowers.jpg">
+                </label><br>
+          </div>
+        </div>
+    
+        <div id="p10" height="30px">
+        </div>
+        <div>
+          <p class="title wrapper"> Problem 10</p>
+          <img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/cifar100-large/people/girl_s_001284.png" height="200px">
+          <p>
+            Choose any one "incorrect" label for this image:
+          </p>
+          <div class="selection">
+                <label>
+                <input type="radio" name="people/girl_s_001284.png" value="large carnivores and bear" required="" width="250px">
+                <span font-size="10pt">large carnivores and bear</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/large carnivores and bear.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="people/girl_s_001284.png" value="non-insect invertebrates" width="250px">
+                <span font-size="10pt">non-insect invertebrates</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/non-insect invertebrates.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="people/girl_s_001284.png" value="large natural outdoor scenes" width="250px">
+                <span font-size="10pt">large natural outdoor scenes</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/large natural outdoor scenes.jpg">
+                </label><br>
+                <label>
+                <input type="radio" name="people/girl_s_001284.png" value="flowers" width="250px">
+                <span font-size="10pt">flowers</span><img src="https://cll-data-collect.s3.us-west-2.amazonaws.com/sample_icon/flowers.jpg">
+                </label><br>
+          </div>
+        </div>
+    <div class="column right" style="position:fixed; top:0; right:0; padding-top: 20px;">
+        Links to all the problems:<br>
+        <a href="#p1">problem 1</a><br>
+        <a href="#p2">problem 2</a><br>
+        <a href="#p3">problem 3</a><br>
+        <a href="#p4">problem 4</a><br>
+        <a href="#p5">problem 5</a><br>
+        <a href="#p6">problem 6</a><br>
+        <a href="#p7">problem 7</a><br>
+        <a href="#p8">problem 8</a><br>
+        <a href="#p9">problem 9</a><br>
+        <a href="#p10">problem 10</a>
+      </div>
+    </div>
+    
+    
+    <!-- </div><crowd-button form-action="submit" variant="primary" data-testid="crowd-submit">Submit</crowd-button></form></crowd-form> -->
