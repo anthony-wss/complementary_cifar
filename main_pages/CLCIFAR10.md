@@ -9,13 +9,13 @@ We collect this complementary version of CIFAR10 in order to verify two importan
 
 ## Dataset
 
-Dataset download link: [clcifar10.pkl](https://bit.ly/3VtiI3U) (160.3MB)
+Dataset download link: [clcifar10.pkl](http://bit.ly/3E3bLi4) (160.3MB)
 
 We use `pickle` package to save and load the dataset objects. Use the function `pickle.load` to load the dataset dictionary object `data` in Python.
 
 ```python
 data = pickle.load(open("clcifar10.pkl", "rb"))
-# keys of data: 'filenames', 'data', 'ord_labels', 'com_labels', 'worker_ids'
+# keys of data: 'filenames', 'data', 'ord_labels', 'com_labels', 'worker_ids', 'label_names'
 ```
 
 `data` would be a dictionary object with five keys: `filenames`, `data`, `ord_labels`, `com_labels`, and `worker_ids`.
@@ -39,6 +39,7 @@ data = pickle.load(open("clcifar10.pkl", "rb"))
 
 * `com_labels`: Three complementary labels for each image from three different workers.
 * `worker_ids`: Three worker ids who submitted these complementary labels for this image. The worker ids are all hashed by sha256 and there would not be any worker id in plaintext in this dataset.
+* `label_names`: The 10 label names: 'airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'
 
 ## Analysis
 
