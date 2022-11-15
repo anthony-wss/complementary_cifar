@@ -49,6 +49,7 @@ data = pickle.load(open("clcifar20.pkl", "rb"))
 
 * `com_labels`: Three complementary labels for each image from three different workers.
 * `worker_ids`: Three worker ids who submitted these complementary labels for this image. The worker ids are all hashed by sha256 and there would not be any worker id in plaintext in this dataset.
+* `label_names`: The 20 super-classes label names list: 'aquatic_mammals', 'fish', 'flowers', 'food_containers', 'fruit, vegetables and mushrooms', 'household electrical devices', 'household furniture', 'insects', 'large carnivores and bear', 'large man-made outdoor things', 'large natural outdoor scenes', 'large omnivores and herbivores', 'medium-sized mammals', 'non-insect invertebrates', 'people', 'reptiles', 'small mammals', 'trees', 'transportation vehicles', 'non-transportation vehicles'
 
 ## Analysis
 
