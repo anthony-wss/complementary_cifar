@@ -13,6 +13,13 @@ Here are the links to the main page of each datasets, containing the analysis of
 * [CLCIFAR10](https://github.com/anthony-wss/complementary_cifar/blob/44d8f25ae366909aed3a63a2ae1dff4007aa3304/main_pages/CLCIFAR10.md)
 * [CLCIFAR20](https://github.com/anthony-wss/complementary_cifar/blob/0a8ca89826264cfb595933a119cb6058b83345db/main_pages/CLCIFAR20.md)
 
+### Download CLCIFAR10 and CLCIFAR20
+
+```bash
+# Download both CLCIFAR10 and CLCIFAR20
+bash download.sh
+```
+
 ### Reference
 * https://www.cs.toronto.edu/~kriz/cifar.html
 * https://www.mturk.com

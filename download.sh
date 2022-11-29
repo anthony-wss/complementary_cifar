@@ -1,0 +1,2 @@
+wget https://drive.google.com/u/1/uc?id=1c-wJ1V_UDCn02S1xYXkJeArYqCvO3Ue0&export=download&confirm=t&uuid=c464f605-e25c-42e6-9d56-cde332b02256&at=AHV7M3dJ5to4SKWSP75oQmrmF8sW:1669724579221 -O clcifar10.pkl
+wget https://drive.google.com/u/1/uc?id=1MXRC7o2dwNLyKkFEXTpanV_tnST4-g9G&export=download&confirm=t&uuid=e705fade-8041-401b-b41e-5d8134921352&at=AHV7M3etmk6Nz76Dv5oOU1gSeDiu:1669724190793 -O clcifar20.pkl

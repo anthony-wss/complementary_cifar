@@ -9,7 +9,7 @@ We collect this complementary version of CIFAR100 in order to verify two importa
 
 ## Dataset
 
-Dataset download link: [clcifar20.pkl](https://drive.google.com/file/d/1MXRC7o2dwNLyKkFEXTpanV_tnST4-g9G/view?usp=sharing) (160.2MB)
+Dataset download link: [clcifar20.pkl](https://drive.google.com/u/1/uc?id=1MXRC7o2dwNLyKkFEXTpanV_tnST4-g9G&export=download&confirm=t&uuid=e705fade-8041-401b-b41e-5d8134921352&at=AHV7M3etmk6Nz76Dv5oOU1gSeDiu:1669724190793) (160.2MB)
 
 We use `pickle` package to save and load the dataset objects. Use the function `pickle.load` to load the dataset dictionary object `data` in Python.
 
